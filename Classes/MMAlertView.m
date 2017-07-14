@@ -138,9 +138,9 @@
                 make.left.right.equalTo(self).insets(UIEdgeInsetsMake(0, config.innerMargin, 0, config.innerMargin));
                 make.height.mas_equalTo(40);
             }];
-            self.inputView.backgroundColor = self.backgroundColor;
+            self.inputView.backgroundColor = [UIColor whiteColor];
             self.inputView.layer.borderWidth = MM_SPLIT_WIDTH;
-            self.inputView.layer.borderColor = config.splitColor.CGColor;
+            self.inputView.layer.borderColor = [UIColor clearColor].CGColor;
             self.inputView.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 5, 5)];
             self.inputView.leftViewMode = UITextFieldViewModeAlways;
             self.inputView.clearButtonMode = UITextFieldViewModeWhileEditing;
